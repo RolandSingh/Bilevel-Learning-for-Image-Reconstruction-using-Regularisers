@@ -1,0 +1,10 @@
+# Core (bi_level_hoag.py)
+torch
+torchvision
+numpy
+matplotlib
+
+# Needed only for mnistbilevel.py (task-adapted experiments in bl_of_tar)
+monai
+deepinv
+torchaudio
