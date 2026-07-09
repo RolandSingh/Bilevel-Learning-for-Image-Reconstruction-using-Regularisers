@@ -105,13 +105,17 @@ bottom: reconstructions):
 
 ---
 
-## Method reference
+## Conclusion
 
-The method follows the SPCOM task-adapted reconstruction framework, specialised here to pure
-reconstruction (no task network), and uses:
-- **HOAG** — F. Pedregosa, "Hyperparameter optimization with approximate gradient," ICML 2016.
-- **Total variation** — Rudin, Osher & Fatemi, *Physica D*, 1992.
-- **Fields of experts** — Chen, Ranftl & Pock, *IEEE TIP*, 2014.
+In this internship, I implemented a bilevel learning framework for image reconstruction on the MNIST
+Dataset. By taking inspiration from the SPCOM paper of my supervisor, the task network was removed, us-
+ing the reconstructed Mean Squared Error (MSE) as the upper-level objective. The implementation included
+the lower-level optimization, hypergradient computation using implicit differentiation, and optimization of
+the regulariser parameters. Experimental results on blurred and noisy MNIST images showed a clear im-
+provement in reconstruction quality, demonstrating that the proposed approach works effectively. This
+project also helped me gain a better understanding of optimization, inverse problems, and bilevel learning
+which can be later extenede to medical imaging applications
+
 
 ---
 
