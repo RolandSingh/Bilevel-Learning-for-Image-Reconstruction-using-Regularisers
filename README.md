@@ -44,7 +44,7 @@ Engineering, IIT Kharagpur. Supervisor: Prof. Subhadip Mukherjee.
 
 ### `bi_level_hoag.py`
 Self-contained implementation. It includes:
-- the **TV** bilevel-HOAG reconstruction (`Physics2D`, `tv_regularizer`, `solve_inner`,
+- the **TV and FoE** bilevel-HOAG reconstruction (`Physics2D`, `tv_regularizer`, `solve_inner`,
   `conjugate_gradient`, `hoag_hypergradient`, `run_hoag`), and a PSNR readout;
 - a small **NumPy gradient check** that compares the HOAG hypergradient against a finite-difference
   estimate (sanity check that the derivation is coded correctly);
@@ -66,9 +66,6 @@ Python 3.10+ and the packages in `requirements.txt`:
 ```bash
 pip install -r requirements.txt
 ```
-
-A GPU is optional — the code falls back to CPU automatically (`bi_level_hoag.py` uses only 100 images,
-so CPU is fine).
 
 ---
 
