@@ -95,17 +95,13 @@ python mnistbilevel.py
 
 ---
 
-## Demo
+## Results/Demo
 
 The reconstructions produced by the two regularisers (top row: originals, middle: blurred + noisy,
 bottom: reconstructions):
 
 ![TV reconstruction](image_sample_1.png)
 ![FoE reconstruction](image_sample_2.png)
-
-*(Add the two figures from the report into `results/` with these names so they render here. For a live
-demo, share the Colab notebook — set it to "Anyone with the link can view" — or record a short screen
-capture of a run showing the before/after images.)*
 
 ---
 
