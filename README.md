@@ -11,7 +11,7 @@ Engineering, IIT Kharagpur. Supervisor: Prof. Subhadip Mukherjee.
 
 ---
 
-## What this project does
+## Overview
 
 - **Lower level:** reconstruct the image by minimising `½‖y − Ax‖² + g_θ(x)` (data fidelity + regulariser).
 - **Upper level:** tune the regulariser parameters `θ` to minimise the reconstruction MSE against the
