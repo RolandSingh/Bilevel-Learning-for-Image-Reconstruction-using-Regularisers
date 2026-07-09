@@ -23,7 +23,10 @@ Engineering, IIT Kharagpur. Supervisor: Prof. Subhadip Mukherjee.
 - **Setup:** 100 MNIST digits, `28×28`, degraded by a `23×23` Gaussian blur (σ = 3) plus Gaussian noise
   (σ = 0.01); a Wiener pseudo-inverse `A†y` is used to warm-start the inner solver.
 
-**Result (TV):** average PSNR improves from **12.90 dB** (blurred/noisy input) to **15.77 dB**
+**Result (TV):** PSNR improves from **12.90 dB** (blurred/noisy input) to **15.77 dB**
+(reconstruction) on the 100-image set.
+
+**Result (FoE):** PSNR improves from **12.90 dB** (blurred/noisy input) to **16.49 dB**
 (reconstruction) on the 100-image set.
 
 ---
@@ -97,8 +100,8 @@ python mnistbilevel.py
 The reconstructions produced by the two regularisers (top row: originals, middle: blurred + noisy,
 bottom: reconstructions):
 
-![TV reconstruction](results/tv_reconstruction.png)
-![FoE reconstruction](results/foe_reconstruction.png)
+![TV reconstruction](image_sample_1.png)
+![FoE reconstruction](image_sample_2.png)
 
 *(Add the two figures from the report into `results/` with these names so they render here. For a live
 demo, share the Colab notebook — set it to "Anyone with the link can view" — or record a short screen
